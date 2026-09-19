@@ -12,7 +12,15 @@ Ten folder to biuro. Rozmawiasz z **dyrektorem biura**. On ma do dyspozycji pers
 
 ## Pierwszy raz
 
-Napisz `/zaczynamy`. Dyrektor się przedstawi, zapyta, jak się do Ciebie zwracać i czym się teraz zajmujesz, założy dwa pliki biura (`USTAWIENIA.md` i `REJESTR.md`), a potem pomoże założyć pierwszy projekt.
+Biuro działa w Claude Code. Pobierz ten folder na swój komputer, otwórz go w Claude Code i napisz `/zaczynamy`:
+
+```
+git clone https://github.com/MonoliYoda/biuro.git
+cd biuro
+claude
+```
+
+Dyrektor się przedstawi, zapyta, jak się do Ciebie zwracać i czym się teraz zajmujesz, założy dwa pliki biura (`USTAWIENIA.md` i `REJESTR.md`), a potem pomoże założyć pierwszy projekt.
 
 ## Na co dzień
 
