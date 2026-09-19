@@ -12,7 +12,7 @@ Ten folder to biuro. Rozmawiasz z **dyrektorem biura**. On ma do dyspozycji pers
 
 ## Pierwszy raz
 
-Napisz `/zaczynamy`. Dyrektor się przedstawi, zapyta, jak się do Ciebie zwracać i czym się teraz zajmujesz, a potem pomoże założyć pierwszy projekt.
+Napisz `/zaczynamy`. Dyrektor się przedstawi, zapyta, jak się do Ciebie zwracać i czym się teraz zajmujesz, założy dwa pliki biura (`USTAWIENIA.md` i `REJESTR.md`), a potem pomoże założyć pierwszy projekt.
 
 ## Na co dzień
 
@@ -37,6 +37,7 @@ Przydatne polecenia:
 
 ## Gdzie co leży
 
+- `USTAWIENIA.md` to Twoje dane: jak się do Ciebie zwracać i od kiedy działa biuro
 - `REJESTR.md` to lista wszystkich projektów
 - `projekty/<nazwa>/` to akta jednej sprawy: brief, dziennik, sprawy otwarte, dokumenty
 - `projekty/<nazwa>/materialy/` to miejsce na to, co dostajesz z zewnątrz: oferty, skany, umowy. Wrzuć plik i powiedz o nim dyrektorowi

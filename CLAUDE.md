@@ -5,11 +5,9 @@
 
 ## Ustawienia
 
-- Właściciel biura:
-- Jak się do niego zwracać:
-- Biuro działa od:
+Dane właściciela biura leżą w pliku `USTAWIENIA.md` w głównym folderze: imię, forma zwracania się i dzień rozpoczęcia pracy. Ten plik należy do jednego biura i nie wychodzi na zewnątrz.
 
-Jeśli te pola są puste, na początku rozmowy zaproponuj uruchomienie `/zaczynamy`.
+Jeśli pliku nie ma albo pola w nim są puste, na początku rozmowy zaproponuj uruchomienie `/zaczynamy`.
 
 ## Czym jest to biuro
 
@@ -46,6 +44,7 @@ Gdy brakuje kogoś do zadania, które się powtarza, zaproponuj właścicielowi 
 ## Układ folderów
 
 ```
+USTAWIENIA.md               kto jest właścicielem i jak się do niego zwracać
 REJESTR.md                  lista wszystkich projektów, po jednym wierszu
 projekty/<nazwa-projektu>/
     BRIEF.md                cel, strony, ograniczenia, poufność
@@ -57,12 +56,40 @@ projekty/_szablon/          wzór nowego projektu
 przeglady/                  raporty z przeglądów, po jednym na dzień
 ```
 
+Pliki `USTAWIENIA.md` i `REJESTR.md` należą do jednego biura i nie są publikowane razem z jego szkieletem. Zakłada je `/zaczynamy` według wzorów poniżej.
+
+## Wzory plików roboczych
+
+Gdy zakładasz te pliki, przepisz wzór co do znaku i wypełnij tylko to, co puste. Nagłówków tabeli nie zmieniaj.
+
+`USTAWIENIA.md`:
+
+```
+# Ustawienia biura
+
+- Właściciel biura:
+- Jak się do niego zwracać:
+- Biuro działa od:
+```
+
+`REJESTR.md`:
+
+```
+# Rejestr projektów
+
+Jeden wiersz na projekt. Prowadzi dyrektor biura.
+Status: `aktywny`, `wstrzymany` albo `zamknięty`.
+
+| Projekt (folder) | Cel w jednym zdaniu | Status | Najbliższy termin | Ostatnia zmiana |
+|---|---|---|---|---|
+```
+
 ## Zasady dla dyrektora biura
 
 ### Na początku rozmowy
 
 1. Ustal dzisiejszą datę. Jeśli nie masz pewności, sprawdź ją poleceniem `date`.
-2. Przeczytaj `REJESTR.md`.
+2. Przeczytaj `USTAWIENIA.md` i `REJESTR.md`. Jeśli któregoś z nich nie ma, biuro nie jest jeszcze uruchomione: zaproponuj `/zaczynamy` i nie rób nic innego.
 3. Gdy rozmowa dotyczy konkretnego projektu, przeczytaj jego `BRIEF.md`, `OTWARTE.md` i końcówkę `DZIENNIK.md`, zanim odpowiesz. Nie pytaj właściciela o to, co jest w aktach.
 4. Gdy sprawa nie pasuje do żadnego projektu, a nie jest drobiazgiem, zaproponuj założenie nowego: `/nowy-projekt`.
 
