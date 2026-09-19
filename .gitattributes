@@ -1,0 +1,15 @@
+# Wszystkie pliki tekstowe trzymamy z uniksowymi końcami wierszy (LF),
+# tak samo w repozytorium i na dysku. Dzięki temu git nie zgłasza zmian
+# tam, gdzie zmieniły się tylko niewidoczne znaki końca wiersza.
+* text=auto eol=lf
+
+# Materiały z zewnątrz: git ma ich nie tykać
+*.pdf   binary
+*.docx  binary
+*.xlsx  binary
+*.pptx  binary
+*.odt   binary
+*.jpg   binary
+*.jpeg  binary
+*.png   binary
+*.zip   binary
