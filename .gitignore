@@ -1,0 +1,23 @@
+# Akta prawdziwych spraw zostają na dysku, nie w repo.
+# Publikujemy tylko wzór nowego projektu.
+projekty/*
+!projekty/_szablon/
+
+# Raporty z przeglądów dotyczą konkretnych spraw
+przeglady/*
+!przeglady/.gitkeep
+
+# Lokalne ustawienia Claude Code (klucze, uprawnienia, rzeczy z tej maszyny)
+.claude/settings.local.json
+
+# Śmieci systemowe i edytorskie
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*~
+*.swp
+
+# Pliki robocze Worda/Excela, które tworzą się przy otwartym dokumencie
+~$*
